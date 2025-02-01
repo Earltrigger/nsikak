@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+        <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="me"></div>
+
+    <div class="mean">
+        <button class="button">Increase</button><br><br>
+        <button class="button">Reset</button>
+        <button class="button">Decrease</button>
+    </div>
+
+    
+
+        
+        
+
+    
+
+    
+    <script>
+        let paragraph = document.createElement('p');
+        paragraph.textContent = "0"
+        let change = document.getElementsByTagName("div");
+        let changeEvent = change[0]
+        changeEvent.appendChild(paragraph)
+        console.log(changeEvent)
+        paragraph.style.backgroundColor = "red";
+        paragraph.style.color = "white";
+        paragraph.style.textAlign = "center";
+        paragraph.style.width = "300px";
+        paragraph.style.height = "300px";
+        paragraph.style.alignContent = "center";
+        paragraph.style.fontSize = "5rem";
+        paragraph.style.border = "3px solid black";
+        paragraph.style.borderRadius = "150px";
+        paragraph.style.cursor= "pointer";
+
+
+
+    </script>
+</body>
+</html>

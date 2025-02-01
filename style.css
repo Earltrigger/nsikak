@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+.me{
+    display: grid; 
+    place-items: center;
+    height: 100vh;
+
+}
+
+.mean {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 80px;
+  }
+  
+  .button {
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    background-color: #4e5254;
+  }
+      
