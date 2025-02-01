@@ -9,22 +9,15 @@
     
 </head>
 <body>
-    <div class="me"></div>
+    <div class="me" id="display"></div>
 
     <div class="mean">
-        <button class="button">Increase</button><br><br>
-        <button class="button">Reset</button>
-        <button class="button">Decrease</button>
+        <button class="button" id="increaseBtn">Increase</button><br><br>
+        <button class="button" id="resetBtn">Reset</button>
+        <button class="button" id="decreaseBtn">Decrease</button>
     </div>
 
-    
-
-        
-        
-
-    
-
-    
+ 
     <script>
         let paragraph = document.createElement('p');
         paragraph.textContent = "0"
@@ -43,6 +36,28 @@
         paragraph.style.borderRadius = "150px";
         paragraph.style.cursor= "pointer";
 
+
+        const increaseBtn = document.getElementById("increaseBtn");
+        const resetBtn = document.getElementById("resetBtn");
+        const decreaseBtn = document.getElementById("decreaseBtn");
+        const Counting = document.getElementsByTagName("div");
+        let count = 0;
+    
+        
+        resetBtn.addEventListener("click", () => {
+            count = 0;
+            Counting[0].textContent = count;
+        });
+         increaseBtn.addEventListener("click", () => {
+             count++;
+             Counting[0].textContent = count;
+         });
+        decreaseBtn.addEventListener("click", () => {
+            count--;
+            Counting[0].textContent = count;
+        });
+
+    
 
 
     </script>
