@@ -36,18 +36,45 @@
         //     Counting[0].textContent = count;
         // });
 
-         const text = document.getElementById("right");
+        let count = 0;
+        let meDiv = document.getElementById("me");
+        
+        meDiv.addEventListener("click", function() {
+      
+            meDiv.style.borderRadius = "20px";
+            meDiv.style.backgroundColor ="blue";
+            meDiv.style.border ="none";
+            meDiv.style.color ="white";
+            count += 5;
+    
+            // Update the text inside the div to show the current count
+            meDiv.textContent = count;
+        });
 
-         text.addEventListener("click", () => {
-            document.body.style.border ="2px solid black"
-            document.body.style.backgroundColor = "red";
-            document.body.style.color = "white";
-            document.body.style.textAlign = "center";
-            document.body.style.width = "300px";
-            document.body.height = "300px";
-            document.body.style.alignContent = "center";
-            document.body.style.fontSize = "5rem";
-            document.body.style.border = "3px solid black";
-            document.body.borderRadius = "150px";
-            document.body.style.cursor= "pointer";
-         }
+       
+        let leftSide = document.getElementById("we");
+        let dark = false
+    
+        leftSide.addEventListener("dblclick", function() {
+            
+            if(dark){leftSide.style.backgroundImage = "url('the 300.jpg')";
+            leftSide.style.alignItems = "center";
+            leftSide.style.width = "300px";
+            leftSide.style.height = "300px";
+            leftSide.style.borderRadius = "10px";
+            leftSide.style.cursor = "pointer";
+            leftSide.style.overflow = "hidden";
+            leftSide.style.backgroundSize = "cover";}
+
+            else{leftSide.style.backgroundImage = "url('fantastic-four-2005.jpg')";
+            leftSide.style.alignItems = "center";
+            leftSide.style.width = "300px";
+            leftSide.style.height = "300px";
+            leftSide.style.borderRadius = "10px";
+            leftSide.style.cursor = "pointer";
+            leftSide.style.overflow = "hidden";
+            leftSide.style.backgroundSize = "cover";
+            }
+            dark =!dark;
+               
+         });
