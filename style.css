@@ -125,15 +125,23 @@
   justify-content: space-evenly;
   gap: 0px;
 } */
-
-.middle .bi-plus-circle{
+.middle .bi-plus-circle {
   color:#B928EE;
   font-size: 1.0rem;
   float: right;
   top: 5px;
+  cursor: pointer;
 }
 
-#first .para{
+.bi-dash-circle {
+  color:black;
+  font-size: 1.0rem;
+  float: right;
+  top: 5px;
+  cursor: pointer;
+}
+
+.first .para{
   font-size: 1rem;
   padding-top: 10px;
   color: #ABA0AB;
@@ -142,7 +150,7 @@
 }
 
 
-#second .para{
+/* #second .para{
   font-size: 1rem;
   padding-top: 10px;
   color: #ABA0AB;
@@ -164,4 +172,4 @@
   color: #ABA0AB;
   border-bottom: 2px solid #FAEDFF;
   padding-bottom: 10px;
-}
+} */

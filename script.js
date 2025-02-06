@@ -36,45 +36,65 @@
         //     Counting[0].textContent = count;
         // });
 
-        let count = 0;
-        let meDiv = document.getElementById("me");
+        // let count = 0;
+        // let meDiv = document.getElementById("me");
         
-        meDiv.addEventListener("click", function() {
+        // meDiv.addEventListener("click", function() {
       
-            meDiv.style.borderRadius = "20px";
-            meDiv.style.backgroundColor ="blue";
-            meDiv.style.border ="none";
-            meDiv.style.color ="white";
-            count += 5;
+        //     meDiv.style.borderRadius = "20px";
+        //     meDiv.style.backgroundColor ="blue";
+        //     meDiv.style.border ="none";
+        //     meDiv.style.color ="white";
+        //     count += 5;
     
-            // Update the text inside the div to show the current count
-            meDiv.textContent = count;
-        });
+        //     // Update the text inside the div to show the current count
+        //     meDiv.textContent = count;
+        // });
 
        
-        let leftSide = document.getElementById("we");
-        let dark = false
+        // let leftSide = document.getElementById("we");
+        // let dark = false
     
-        leftSide.addEventListener("dblclick", function() {
+        // leftSide.addEventListener("dblclick", function() {
             
-            if(dark){leftSide.style.backgroundImage = "url('the 300.jpg')";
-            leftSide.style.alignItems = "center";
-            leftSide.style.width = "300px";
-            leftSide.style.height = "300px";
-            leftSide.style.borderRadius = "10px";
-            leftSide.style.cursor = "pointer";
-            leftSide.style.overflow = "hidden";
-            leftSide.style.backgroundSize = "cover";}
+        //     if(dark){leftSide.style.backgroundImage = "url('the 300.jpg')";
+        //     leftSide.style.alignItems = "center";
+        //     leftSide.style.width = "300px";
+        //     leftSide.style.height = "300px";
+        //     leftSide.style.borderRadius = "10px";
+        //     leftSide.style.cursor = "pointer";
+        //     leftSide.style.overflow = "hidden";
+        //     leftSide.style.backgroundSize = "cover";}
 
-            else{leftSide.style.backgroundImage = "url('fantastic-four-2005.jpg')";
-            leftSide.style.alignItems = "center";
-            leftSide.style.width = "300px";
-            leftSide.style.height = "300px";
-            leftSide.style.borderRadius = "10px";
-            leftSide.style.cursor = "pointer";
-            leftSide.style.overflow = "hidden";
-            leftSide.style.backgroundSize = "cover";
-            }
-            dark =!dark;
+        //     else{leftSide.style.backgroundImage = "url('fantastic-four-2005.jpg')";
+        //     leftSide.style.alignItems = "center";
+        //     leftSide.style.width = "300px";
+        //     leftSide.style.height = "300px";
+        //     leftSide.style.borderRadius = "10px";
+        //     leftSide.style.cursor = "pointer";
+        //     leftSide.style.overflow = "hidden";
+        //     leftSide.style.backgroundSize = "cover";
+        //     }
+        //     dark =!dark;
                
-         });
+        //  });
+
+        const plusIcons = document.querySelectorAll('.bi-dash-circle');
+
+// Loop through each icon and add a click event listener
+    plusIcons.forEach(icon => {
+    icon.addEventListener('click', () => {
+    // Find the parent FAQ item to target both the heading and the paragraph
+    const faqItem = icon.closest('.first');
+    //const header = faqItem.querySelector('.head');
+    const para = faqItem.querySelector('.para');
+    
+    // Toggle the visibility of both the heading and the paragraph
+    //header.style.display = (header.style.display === 'none') ? 'block' : 'none';
+    para.style.display = (para.style.display === 'none') ? 'block' : 'none';
+    
+    // Optionally toggle the icon from plus to minus
+    icon.classList.toggle('bi-plus-circle');
+    icon.classList.toggle('bi-dash-circle');
+    });
+    });
