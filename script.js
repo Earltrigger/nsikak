@@ -79,17 +79,17 @@
                
         //  });
 
-        const plusIcons = document.querySelectorAll('.bi-dash-circle');
+        const dashIcons = document.querySelectorAll('.bi-dash-circle');
 
 // Loop through each icon and add a click event listener
-    plusIcons.forEach(icon => {
+    dashIcons.forEach(icon => {
     icon.addEventListener('click', () => {
-    // Find the parent FAQ item to target both the heading and the paragraph
+    // Find the parent FAQ item to target  the paragraph
     const faqItem = icon.closest('.first');
     //const header = faqItem.querySelector('.head');
     const para = faqItem.querySelector('.para');
     
-    // Toggle the visibility of both the heading and the paragraph
+    // Toggle the visibility of the paragraph
     //header.style.display = (header.style.display === 'none') ? 'block' : 'none';
     para.style.display = (para.style.display === 'none') ? 'block' : 'none';
     
