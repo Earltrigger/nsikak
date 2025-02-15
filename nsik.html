@@ -120,6 +120,8 @@
     <script>
         const faqs = document.querySelectorAll('.faq');
         // console.log(faqs);
+        let openFaq = null;
+
         for(let faq of faqs){
             faq.addEventListener('click', () => {
                 const answer = faq.querySelector('.answer');
@@ -135,11 +137,11 @@
                 answer.classList.toggle('show');
                 console.log(answer);
             })
+
+            // Close other open faqs when a new one is clicked
+           
         }
 
-        // for(let i = 0; i < faqs.length; i++){
-        //     console.log(faqs[i].innerHTML);
-        // }
     </script>
 </body>
 </html>
